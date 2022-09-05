@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Javacl" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Jspcl" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

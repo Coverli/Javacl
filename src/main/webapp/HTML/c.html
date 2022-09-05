@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>c开头标签</title>
+</head>
+<body>
+    <!-- 
+        <canvas> 标签定义图形，比如图表和其他图像。
+        <canvas> 标签只是图形容器，您必须使用脚本来绘制图形。
+     -->
+    <canvas id="myCanvas" height="200px" width="200px">浏览器不支持canvas标签</canvas>
+
+     <!-- 
+        caption 元素定义表格标题。
+        caption 标签必须紧随 table 标签之后。您只能对每个表格定义一个标题。通常这个标题会被居中于表格之上。
+      -->
+    <table border="1">
+        <caption>标题</caption>
+        <tr>
+          <th>th1</th>
+          <th>th2</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- 
+        <cite> 标签通常表示它所包含的文本对某个参考文献的引用，比如书籍或者杂志的标题。
+        按照惯例，引用的文本将以斜体显示。
+        用 <cite> 标签把指向其他文档的引用分离出来，尤其是分离那些传统媒体中的文档，如书籍、杂志、期刊，等等。如果引用的这些文档有联机版本，还应该把引用包括在一个 <a> 标签中，从而把一个超链接指向该联机版本。
+        <cite> 标签还有一个隐藏的功能：它可以使你或者其他人从文档中自动摘录参考书目。我们可以很容易地想象一个浏览器，它能够自动整理引用表格，并把它们作为脚注或者独立的文档来显示。<cite> 标签的语义已经远远超过了改变它所包含的文本外观的作用；它使浏览器能够以各种实用的方式来向用户表达文档的内容。
+       -->
+    <cite>文本斜体</cite>
+    <br>
+
+    <!-- 
+        <code> 标签用于表示计算机源代码或者其他机器可以阅读的文本内容。
+        软件代码的编写者已经习惯了编写源代码时文本表示的特殊样式。<code> 标签就是为他们设计的。包含在该标签内的文本将用等宽、类似电传打字机样式的字体（Courier）显示出来
+        只应该在表示计算机程序源代码或者其他机器可以阅读的文本内容上使用 <code> 标签。虽然 <code> 标签通常只是把文本变成等宽字体，但它暗示着这段文本是源程序代码。将来的浏览器有可能会加入其他显示效果。例如，程序员的浏览器可能会寻找 <code> 片段，并执行某些额外的文本格式化处理，如循环和条件判断语句的特殊缩进等。
+    -->
+    <code>
+        public static void main (String[] args){
+            System.out.print("代码文本");
+        }
+    </code>
+    <br>
+
+    <!-- 
+        <col> 标签为表格中一个或多个列定义属性值。
+        如需对全部列应用样式，<col> 标签很有用，这样就不需要对各个单元和各行重复应用样式了。
+        您只能在 table 或 colgroup 元素中使用 <col> 标签。
+
+        提示：请为 <col> 标签添加 class 属性。这样就可以使用 CSS 来负责对齐方式、宽度和颜色等等。
+        提示：如果您希望在 colgroup 内部为每个列规定不同的属性值时，请使用此元素。如果没有 col 元素，列会从 colgroup 那里继承所有的属性值。
+        注释：col 元素是仅包含属性的空元素。如需创建列，您就必须在 tr 元素内部规定 td 元素。
+     -->
+    <table width="50%" border="1">
+        <col align="left" />
+        <col align="center" />
+        <col align="right" />
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- 
+        <colgroup> 标签用于对表格中的列进行组合，以便对其进行格式化。
+        如需对全部列应用样式，<colgroup> 标签很有用，这样就不需要对各个单元和各行重复应用样式了。
+        <colgroup> 标签只能在 table 元素中使用。
+
+        提示：请为 <colgroup> 标签添加 class 属性。这样就可以使用 CSS 来负责对齐方式、宽度和颜色等等。
+        注释：col 元素是仅包含属性的空元素。如需创建列，您就必须在 tr 元素内部规定 td 元素。
+     -->
+    <table width="50%" border="1">
+        <colgroup span="2" align="left"></colgroup>
+        <colgroup align="right" style="color:#0000FF;"></colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+        <tr>
+            <td>2489604</td>
+            <td>My first CSS</td>
+            <td>$47</td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- 
+        command 元素表示用户能够调用的命令。
+        <command> 标签可以定义命令按钮，比如单选按钮、复选框或按钮。
+        只有当 command 元素位于 menu 元素内时，该元素才是可见的。否则不会显示这个元素，但是可以用它规定键盘快捷键。
+        目前只有 Internet Explorer 支持 <command> 标签。
+     -->
+    <menu>
+        <command onclick="alert('Hello World')">点我</command>
+    </menu>
+</body>
+</html>
+
+
+<!-- 
+    <canvas> 标签描绘
+ -->
+<script type="text/javascript">
+    var canvas=document.getElementById('myCanvas');
+    var ctx=canvas.getContext('2d');
+    ctx.fillStyle='#FF0000';
+    ctx.fillRect(0,0,80,100);    
+</script>

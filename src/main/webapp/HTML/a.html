@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a开头标签</title>
+
+    <style>
+        /* 未访问的链接 */
+        a:link {
+          color: #FF0000;
+        }
+
+        /* 已访问的链接 */
+        a:visited {
+          color: #00FF00;
+        }
+
+        /* 鼠标悬停链接 */
+        a:hover {
+          color: #FF00FF;
+        }
+
+        /* 已选择的链接 */
+        a:active {
+          color: #0000FF;
+        }
+        /*  
+            注释：在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后才能生效。
+            注释：在 CSS 定义中，a:active 必须位于 a:hover 之后才能生效。 
+        */
+    </style>
+</head>
+<body>
+    <!-- 
+        <a> 标签定义超链接，用于从一张页面链接到另一张页面。
+        <a> 元素最重要的属性是 href 属性，它指示链接的目标。
+        提示和注释
+        提示：如果不使用 href 属性，则不可以使用如下属性：download, hreflang, media, rel, target 以及 type 属性。    
+        提示：被链接页面通常显示在当前浏览器窗口中，除非您规定了另一个目标（target 属性）。 
+        提示：请使用 CSS 来设置链接的样式。 
+    -->
+    <a href="https://www.baidu.com" hreflang="zh">点击跳转到百度</a>
+    <br>
+
+    <a href="../Images/a.png" download="w3logo">
+        <img border="0" width="20%" height="20%" src="../Images/a.png" alt="imageNotFound">
+    </a>
+    <br>
+
+    <!-- 
+    定义和用法
+        <abbr> 标签指示简称或缩写，比如 "WWW" 或 "NATO"。
+        通过对缩写进行标记，您能够为浏览器、拼写检查和搜索引擎提供有用的信息。 
+    -->
+    The <abbr title="People's Republic of China">PRC</abbr> was founded in 1949.
+    <br>
+
+    <!-- 
+    定义和用法
+        <address> 标签定义文档或文章的作者/拥有者的联系信息。
+        如果 <address> 元素位于 <body> 元素内，则它表示文档联系信息。
+        如果 <address> 元素位于 <article> 元素内，则它表示文章的联系信息。
+        <address> 元素中的文本通常呈现为斜体。大多数浏览器会在 address 元素前后添加折行。
+        
+    提示和注释
+        提示：<address> 标签不应该用于描述通讯地址，除非它是联系信息的一部分。
+        提示：<address> 元素通常连同其他信息被包含在 <footer> 元素中。 
+    -->
+    <address>
+        Written by <a href="123@123.com">李四</a>.<br> 
+        学习就上:<br>
+        www.baidu.com
+    </address>
+
+    <!--
+    定义和用法
+        <area> 标签定义图像映射中的区域（注：图像映射指得是带有可点击区域的图像）。
+        area 元素总是嵌套在 <map> 标签中。
+        注释：<img> 标签中的 usemap 属性与 map 元素 name 属性相关联，创建图像与映射之间的联系。
+    注释：
+        img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），
+        所以我们同时向 map 元素添加了 "id" 和 "name" 属性。
+    -->
+    <img src="../Images/area.jpg" border="0" usemap="#0" alt="0" />
+    <map name="0" id="0">
+        <area shape="circle" coords="180,139,14" href ="../Images/area3.gif" alt="3" />
+        <area shape="circle" coords="129,161,10" href ="../Images/area2.gif" alt="2" />
+        <area shape="rect" coords="0,0,110,260" href ="../Images/area1.gif" alt="1" />
+    </map>
+    <br>
+
+    <article>
+        <h3>article标签</h3>
+        <p>article标签规定独立的自包含内容。一篇文章应有其自身的意义，应该有可能独立于站点的其余部分对其进行分发。</p>
+    </article>
+    <br>
+
+    <p>aside标签定义其所处内容之外的内容</p>
+    <aside>
+        <h4>aside</h4>
+        <p>aside 的内容应该与附近的内容相关</p>
+    </aside>
+
+    <!-- 
+    定义和用法
+        <audio> 标签定义声音，比如音乐或其他音频流。
+     -->
+    <audio src="../Images/horse.ogv" controls="controls" type="audio/ogg" autoplay="autoplay" loop="loop" muted="muted">
+        您的浏览器不支持audio标签
+    </audio>
+</body>
+</html>

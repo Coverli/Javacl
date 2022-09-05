@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b开头标签</title>
+
+    <!-- 
+    定义和用法
+        <base> 标签为页面上的所有链接规定默认地址或默认目标。
+        通常情况下，浏览器会从当前文档的URL中提取相应的元素来填写相对URL中的空白。
+        使用 <base> 标签可以改变这一点。浏览器随后将不再使用当前文档的URL，而使用指定的基本URL来解析所有的相对URL。
+        这其中包括 <a>、<img>、<link>、<form> 标签中的 URL。
+    -->
+    <base href="http://www.baidu.com"/>
+    <base target="_blank" />
+</head>
+<body>
+    <!-- 
+    定义和用法
+        <b> 标签规定粗体文本
+    注释：
+        根据 HTML5 规范，在没有其他合适标签更合适时，才应该把 <b> 标签作为最后的选项。HTML5 规范声明：应该使用 <h1> - <h6> 来表示标题，使用 <em> 标签来表示强调的文本，应该使用 <strong> 标签来表示重要文本，应该使用 <mark> 标签来表示标注的/突出显示的文本。
+    提示：
+        您也能够使用 CSS "font-weight" 属性来设置粗体文本。
+     -->
+    <b>这是粗体文本</b>
+    <br>
+
+    <a href="">base标签将地址默认为百度</a>
+    <br>
+
+    <!-- 
+    定义和用法
+        bdi 指的是 bidi 隔离。
+        <bdi> 标签允许您设置一段文本，使其脱离其父元素的文本方向设置。
+        在发布用户评论或其他您无法完全控制的内容时，该标签很有用。
+     -->
+    <ul>
+        <li>
+            Username
+            <bdi dir="auto">
+                Coverli
+            </bdi>
+            :82 points
+        </li>
+        <li>
+            Username
+            <bdi dir="ltr">
+                Bill
+            </bdi>
+            :80 points
+        </li>
+        <li>
+            Username
+            <bdi dir="rtl">
+                Steve
+            </bdi>
+            :78 points
+        </li>
+    </ul>
+    <br>
+
+    <!-- 
+        bdo 元素可覆盖默认的文本方向。
+     -->
+    <p>原文：Here is some text</p>
+    rtl：<bdo dir="rtl">Here is some text</bdo>
+    <br>
+    lrt：<bdo dir="lrt">Here is some text</bdo>
+    <br>
+
+    <!-- 
+    定义和用法
+        <blockquote> 标签定义块引用。
+        <blockquote> 与 </blockquote> 之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进（增加外边距），而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。
+    
+    提示：请使用q元素来标记短的引用。
+     -->
+    <blockquote>
+        块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。
+        块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。
+        块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。块引用。
+    </blockquote>
+    <br>
+
+    <!-- 
+        <br> 可插入一个简单的换行符。
+        <br> 标签是空标签（意味着它没有结束标签，因此这是错误的：<br></br>）。
+        在 XHTML 中，把结束标签放在开始标签中，也就是 <br/>。
+        请注意，<br> 标签只是简单地开始新的一行，而当浏览器遇到 <p> 标签时，通常会在相邻的段落之间插入一些垂直的间距。
+     -->
+     换
+     <br>
+     行
+     <br>
+
+     <!-- 
+         <button> 标签定义一个按钮。
+        在 button 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 input 元素创建的按钮之间的不同之处。
+        <button> 控件 与 <input type="button"> 相比，提供了更为强大的功能和更丰富的内容。<button> 与 </button> 标签之间的所有内容都是按钮的内容，其中包括任何可接受的正文内容，比如文本或多媒体内容。例如，我们可以在按钮中包括一个图像和相关的文本，用它们在按钮中创建一个吸引人的标记图像。
+        唯一禁止使用的元素是图像映射，因为它对鼠标和键盘敏感的动作会干扰表单按钮的行为。
+        请始终为按钮规定 type 属性。Internet Explorer 的默认类型是 "button"，而其他浏览器中（包括 W3C 规范）的默认值是 "submit"。
+
+        注释：如果在 HTML 表单中使用 button 元素，不同的浏览器会提交不同的按钮值。请使用 input 元素在 HTML 表单中创建按钮。
+      -->
+     <button type="button" value="1" type="button">普通按钮</button>
+     <button type="button" value="2" type="reset">重置按钮</button>
+     <button type="button" value="3" type="submit">提交按钮</button>
+</html>
