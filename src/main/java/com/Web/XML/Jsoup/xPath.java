@@ -1,4 +1,4 @@
-package cn.itcast.xml.jsoup;
+package com.Web.XML.Jsoup;
 
 
 import cn.wanghaomiao.xpath.exception.XpathSyntaxErrorException;
@@ -6,19 +6,18 @@ import cn.wanghaomiao.xpath.model.JXDocument;
 import cn.wanghaomiao.xpath.model.JXNode;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 /**
- *XPath查询
+ * XPath查询
  */
-public class JsoupDemo6 {
+public class xPath {
     public static void main(String[] args) throws IOException, XpathSyntaxErrorException {
         //1.获取student.xml的path
-        String path = JsoupDemo6.class.getClassLoader().getResource("student.xml").getPath();
+        String path = xPath.class.getClassLoader().getResource("com/Web/XML/Jsoup/student.xml").getPath();
         //2.获取Document对象
         Document document = Jsoup.parse(new File(path), "utf-8");
 

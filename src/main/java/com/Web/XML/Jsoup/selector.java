@@ -1,21 +1,20 @@
-package cn.itcast.xml.jsoup;
+package com.Web.XML.Jsoup;
 
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.IOException;
 
 /**
- *选择器查询
+ * 选择器查询
  */
-public class JsoupDemo5 {
+public class selector {
     public static void main(String[] args) throws IOException {
         //1.获取student.xml的path
-        String path = JsoupDemo5.class.getClassLoader().getResource("student.xml").getPath();
+        String path = selector.class.getClassLoader().getResource("com/Web/XML/Jsoup/student.xml").getPath();
         //2.获取Document对象
         Document document = Jsoup.parse(new File(path), "utf-8");
 

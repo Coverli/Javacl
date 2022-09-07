@@ -240,7 +240,8 @@ public class oneD{
 		printArray(array); // 传递进去的就是array当中保存的地址值
 		System.out.println();
 	}
-	/*
+
+	/**
     三要素
     返回值类型：只是进行打印而已，不需要进行计算，也没有结果，用void
     方法名称：printArray
@@ -270,9 +271,9 @@ public class oneD{
 
 		// 需要一个数组，也就是一个塑料兜，数组可以保存多个结果
         /*
-        int[] array = new int[2];
-        array[0] = sum; // 总和
-        array[1] = avg; // 平均数
+			int[] array = new int[2];
+			array[0] = sum; // 总和
+			array[1] = avg; // 平均数
         */
 
 		int[] array = { sum, avg };

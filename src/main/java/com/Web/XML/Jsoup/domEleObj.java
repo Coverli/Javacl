@@ -1,4 +1,4 @@
-package cn.itcast.xml.jsoup;
+package com.Web.XML.Jsoup;
 
 
 import org.jsoup.Jsoup;
@@ -8,15 +8,14 @@ import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 /**
  * Document/Element对象功能
  */
-public class JsoupDemo3 {
+public class domEleObj {
     public static void main(String[] args) throws IOException {
         //1.获取student.xml的path
-        String path = JsoupDemo3.class.getClassLoader().getResource("student.xml").getPath();
+        String path = domEleObj.class.getClassLoader().getResource("com/Web/XML/Jsoup/student.xml").getPath();
         //2.获取Document对象
         Document document = Jsoup.parse(new File(path), "utf-8");
 

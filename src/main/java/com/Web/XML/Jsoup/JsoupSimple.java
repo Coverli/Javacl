@@ -1,4 +1,4 @@
-package cn.itcast.xml.jsoup;
+package com.Web.XML.Jsoup;
 
 
 import org.jsoup.Jsoup;
@@ -12,11 +12,13 @@ import java.io.IOException;
 /**
  * Jsoup快速入门
  */
-public class JsoupDemo1 {
+public class JsoupSimple {
+
     public static void main(String[] args) throws IOException {
         //2.获取Document对象，根据xml文档获取
         //2.1获取student.xml的path
-        String path = JsoupDemo1.class.getClassLoader().getResource("student.xml").getPath();
+        String path = JsoupSimple.class.getClassLoader().getResource("com/Web/XML/Jsoup/student.xml").getPath();
+        System.out.println(path);
         //2.2解析xml文档，加载文档进内存，获取dom树--->Document
         Document document = Jsoup.parse(new File(path), "utf-8");
         //3.获取元素对象 Element

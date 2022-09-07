@@ -1,22 +1,19 @@
-package cn.itcast.xml.jsoup;
+package com.Web.XML.Jsoup;
 
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
 /**
  * Jsoup对象功能
  */
-public class JsoupDemo2 {
+public class JsoupObj {
     public static void main(String[] args) throws IOException {
         //2.1获取student.xml的path
-        String path = JsoupDemo2.class.getClassLoader().getResource("student.xml").getPath();
+        String path = JsoupObj.class.getClassLoader().getResource("com/Web/XML/Jsoup/student.xml").getPath();
         //2.2解析xml文档，加载文档进内存，获取dom树--->Document
        /* Document document = Jsoup.parse(new File(path), "utf-8");
         System.out.println(document);*/

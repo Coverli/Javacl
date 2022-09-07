@@ -45,40 +45,75 @@ under the License.
         </library>
       </orderEntry>
      -->  
-    <output url="file://$MODULE_DIR$/target/classes"/>
-    <output-test url="file://$MODULE_DIR$/target/test-classes"/>
-    <orderEntry type="module-library">
-      <library>
+    <output url="file://$MODULE_DIR$/target/classes"/>  
+    <output-test url="file://$MODULE_DIR$/target/test-classes"/>  
+    <orderEntry type="module-library"> 
+      <library> 
         <CLASSES>
           <root url="jar://C:/Users/86137/.m2/repository/junit/junit/4.11/junit-4.11.jar!/"/>
         </CLASSES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
+      </library> 
+    </orderEntry>  
+    <orderEntry type="module-library"> 
+      <library> 
         <CLASSES>
           <root url="jar://C:/Users/86137/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/"/>
         </CLASSES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
+      </library> 
+    </orderEntry>  
+    <orderEntry type="module-library"> 
+      <library> 
         <CLASSES>
           <root url="jar://C:/Users/86137/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar!/"/>
         </CLASSES>
-      </library>
-    </orderEntry>
+      </library> 
+    </orderEntry>  
+    <orderEntry type="module-library"> 
+      <library> 
+        <CLASSES>
+          <root url="jar://C:/Users/86137/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar!/"/>
+        </CLASSES>
+      </library> 
+    </orderEntry>  
+    <orderEntry type="module-library"> 
+      <library> 
+        <CLASSES>
+          <root url="jar://C:/Users/86137/.m2/repository/org/json/json/20220320/json-20220320.jar!/"/>
+        </CLASSES>
+      </library> 
+    </orderEntry>  
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/86137/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar!/"/>
+          <root url="jar://C:/Users/86137/.m2/repository/org/jsoup/jsoup/1.11.2/jsoup-1.11.2.jar!/"/>
         </CLASSES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/Users/86137/.m2/repository/org/json/json/20220320/json-20220320.jar!/"/>
+          <root url="jar://C:/Users/86137/.m2/repository/org/apache/taglibs/taglibs-standard-impl/1.2.5/taglibs-standard-impl-1.2.5.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/86137/.m2/repository/cn/wanghaomiao/JsoupXpath/0.3.2/JsoupXpath-0.3.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/86137/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar!/"/>
+        </CLASSES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://C:/Users/86137/.m2/repository/javax/servlet/jsp/jstl/jstl/1.2/jstl-1.2.jar!/"/>
         </CLASSES>
       </library>
     </orderEntry>
@@ -100,38 +135,38 @@ under the License.
     </webroots>
   </component>
   -->  
-  <component name="WebModuleBuildComponent">
-    <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/target/Javacl"/>
-  </component>
-  <component name="WebModuleProperties">
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0"/>
-      <attribute name="URI" value="/WEB-INF/lib/junit-4.11.jar"/>
-      <url>jar://C:/Users/86137/.m2/repository/junit/junit/4.11/junit-4.11.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="0"/>
-      <attribute name="URI" value="/WEB-INF/lib/hamcrest-core-1.3.jar"/>
-      <url>jar://C:/Users/86137/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/mysql-connector-java-8.0.30.jar"/>
-      <url>jar://C:/Users/86137/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/protobuf-java-3.19.4.jar"/>
-      <url>jar://C:/Users/86137/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar!/</url>
-    </containerElement>
-    <containerElement type="library" level="module">
-      <attribute name="method" value="1"/>
-      <attribute name="URI" value="/WEB-INF/lib/json-20220320.jar"/>
-      <url>jar://C:/Users/86137/.m2/repository/org/json/json/20220320/json-20220320.jar!/</url>
-    </containerElement>
-    <deploymentDescriptor version="2.3" name="web.xml" optional="false" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml"/>
-    <webroots>
-      <root relative="/" url="file://$MODULE_DIR$/src/main/webapp"/>
-    </webroots>
-  </component>
+  <component name="WebModuleBuildComponent"> 
+    <setting name="EXPLODED_URL" value="file://$MODULE_DIR$/target/Javacl"/> 
+  </component>  
+  <component name="WebModuleProperties"> 
+    <containerElement type="library" level="module"> 
+      <attribute name="method" value="0"/>  
+      <attribute name="URI" value="/WEB-INF/lib/junit-4.11.jar"/>  
+      <url>jar://C:/Users/86137/.m2/repository/junit/junit/4.11/junit-4.11.jar!/</url> 
+    </containerElement>  
+    <containerElement type="library" level="module"> 
+      <attribute name="method" value="0"/>  
+      <attribute name="URI" value="/WEB-INF/lib/hamcrest-core-1.3.jar"/>  
+      <url>jar://C:/Users/86137/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/</url> 
+    </containerElement>  
+    <containerElement type="library" level="module"> 
+      <attribute name="method" value="1"/>  
+      <attribute name="URI" value="/WEB-INF/lib/mysql-connector-java-8.0.30.jar"/>  
+      <url>jar://C:/Users/86137/.m2/repository/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar!/</url> 
+    </containerElement>  
+    <containerElement type="library" level="module"> 
+      <attribute name="method" value="1"/>  
+      <attribute name="URI" value="/WEB-INF/lib/protobuf-java-3.19.4.jar"/>  
+      <url>jar://C:/Users/86137/.m2/repository/com/google/protobuf/protobuf-java/3.19.4/protobuf-java-3.19.4.jar!/</url> 
+    </containerElement>  
+    <containerElement type="library" level="module"> 
+      <attribute name="method" value="1"/>  
+      <attribute name="URI" value="/WEB-INF/lib/json-20220320.jar"/>  
+      <url>jar://C:/Users/86137/.m2/repository/org/json/json/20220320/json-20220320.jar!/</url> 
+    </containerElement>  
+    <deploymentDescriptor version="2.3" name="web.xml" optional="false" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml"/>  
+    <webroots> 
+      <root relative="/" url="file://$MODULE_DIR$/src/main/webapp"/> 
+    </webroots> 
+  </component> 
 </module>

@@ -1,4 +1,4 @@
-package cn.itcast.xml.jsoup;
+package com.Web.XML.Jsoup;
 
 
 import org.jsoup.Jsoup;
@@ -12,28 +12,25 @@ import java.io.IOException;
 /**
  *Element对象功能
  */
-public class JsoupDemo4 {
+public class elementObj {
     public static void main(String[] args) throws IOException {
         //1.获取student.xml的path
-        String path = JsoupDemo4.class.getClassLoader().getResource("student.xml").getPath();
+        String path = elementObj.class.getClassLoader().getResource("com/Web/XML/Jsoup/student.xml").getPath();
         //2.获取Document对象
         Document document = Jsoup.parse(new File(path), "utf-8");
         /*
         Element：元素对象
 				1. 获取子元素对象
-					* getElementById​(String id)：根据id属性值获取唯一的element对象
-					* getElementsByTag​(String tagName)：根据标签名称获取元素对象集合
-					* getElementsByAttribute​(String key)：根据属性名称获取元素对象集合
-					* getElementsByAttributeValue​(String key, String value)：根据对应的属性名和属性值获取元素对象集合
+					* getElementById (String id)：根据id属性值获取唯一的element对象
+					* getElementsByTag (String tagName)：根据标签名称获取元素对象集合
+					* getElementsByAttribute (String key)：根据属性名称获取元素对象集合
+					* getElementsByAttributeValue (String key, String value)：根据对应的属性名和属性值获取元素对象集合
 
 				2. 获取属性值
 					* String attr(String key)：根据属性名称获取属性值
 				3. 获取文本内容
 					* String text():获取所有字标签的纯文本内容
 					* String html():获取标签体的所有内容(包括子标签的标签和文本内容)
-
-
-
 
          */
         //通过Document对象获取name标签，获取所有的name标签，可以获取到两个
