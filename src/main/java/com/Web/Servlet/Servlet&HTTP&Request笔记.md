@@ -204,8 +204,8 @@
 	* 开发步骤
 		1. 创建项目，导入html页面，配置文件，jar包
 		2. 创建数据库环境
-			CREATE DATABASE day14;
-			USE day14;
+			CREATE DATABASE LoginCase;
+			USE LoginCase;
 			CREATE TABLE USER(
 			
 				id INT PRIMARY KEY AUTO_INCREMENT,
@@ -213,8 +213,8 @@
 				PASSWORD VARCHAR(32) NOT NULL
 			);
 
-		3. 创建包cn.itcast.domain,创建类User
-			package cn.itcast.domain;
+		3. 创建包,创建类User
+			package cn.itcast.domain;package com.Web.Request.LoginCase.src.domain;
 			/**
 			 * 用户的实体类
 			 */
@@ -258,8 +258,8 @@
 			                '}';
 			    }
 			}
-		4. 创建包cn.itcast.util,编写工具类JDBCUtils
-			package cn.itcast.util;
+		4. 创建包,编写工具类JDBCUtils
+			package com.Web.Request.LoginCase.src.util;
 
 			import com.alibaba.druid.pool.DruidDataSourceFactory;
 			
@@ -312,9 +312,9 @@
 			        return  ds.getConnection();
 			    }
 			}
-		5. 创建包cn.itcast.dao,创建类UserDao,提供login方法
+		5. 创建包,创建类UserDao,提供login方法
 			
-			package cn.itcast.dao;
+			package com.Web.Request.LoginCase.src.dao;
 
 			import cn.itcast.domain.User;
 			import cn.itcast.util.JDBCUtils;
@@ -353,8 +353,8 @@
 			    }
 			}
 		
-		6. 编写cn.itcast.web.servlet.LoginServlet类
-			package cn.itcast.web.servlet;
+		6. 编写LoginServlet类
+			package com.Web.Request.LoginCase.src.web.servlet;
 
 			import cn.itcast.dao.UserDao;
 			import cn.itcast.domain.User;
