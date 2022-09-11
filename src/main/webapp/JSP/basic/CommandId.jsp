@@ -13,6 +13,8 @@
     buffer：设置JSP的out输出对象使用的缓冲区大小，单位为KB，默认大小为8KB，建议使用8的倍数
     autoFlush：设置JSP页面缓存满时，是否自动刷新缓存，默认为true，如果为false则缓存满时将抛出异常
     isErrorPage：设定当前JSP页面是否为错误处理页面来处理另一个JSP页面的错误
+        如果值为 true 则该页面可以使用 Exception 对象，
+        如果值为 false 则该页面不可以使用 Exception 对象
     errorPage：指定当前JSP页面的错误处理JSP页面
 --%>
 <%@ page language="java" import="java.util.Date" pageEncoding="GBK"
@@ -24,6 +26,7 @@
     prefix：用于指定标签的前缀，但不能命名为jsp,jspx,java,javax,sun,servlet,sunw
     uti：指定标签库文件的存放位置
     设置后可以用prefix来引用uri标签库中的标签
+    例如：<c:foreach >
 --%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -44,5 +47,12 @@
 %>
 当前时间：<%=today%>
 <%@include file="CommandIdEnd.jsp"%>
+
+<%--
+    该注释可以注释掉所有代码片段，推荐使用这种
+--%>
+<!--
+    该注释只能注释HTML代码片段
+-->
 </body>
 </html>
